@@ -27,8 +27,11 @@ VALIDATION_SIZE = 5000
 # test_file_path = 'NSL_KDD/KDDTest-21.txt'
 
 sys.path.append('../')
+train_file_path = 'data/NSL_KDD/KDDTrain+_20Percent.txt' #'data/NSL_KDD/KDDTrain+.txt'
+test_file_path = 'data/NSL_KDD/KDDTest-21.txt' #KDDTest+.txt'
+
 train_file_path = 'data/NSL_KDD/KDDTrain+.txt'
-test_file_path = 'data/NSL_KDD/KDDTest+.txt'
+test_file_path = 'data/NSL_KDD/KDDTest+.txt' #KDDTest+.txt'
 SCALER = 'std_scale'
 
 # attributes/features of the data
