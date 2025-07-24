@@ -46,7 +46,7 @@ ATTACK_PARAMS = {
     'mnist': {'eps': 0.300, 'eps_iter': 0.010},
     'cifar': {'eps': 0.050, 'eps_iter': 0.005},
     'svhn': {'eps': 0.130, 'eps_iter': 0.010},
-    'nsl-kdd': {'eps': 0.83, 'eps_iter': 0.02},
+    'nsl-kdd': {'eps': 0.243, 'eps_iter': 0.012}, #{'eps': 0.83, 'eps_iter': 0.02},
     'CAN_DoS': {'eps': 0.300, 'eps_iter': 0.010},
     'cicids_binary': {'eps': 0.080, 'eps_iter': 0.030},
     'cicids': {'eps': 0.08, 'eps_iter': 0.030}

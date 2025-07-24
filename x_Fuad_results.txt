@@ -1,0 +1,83 @@
+NSL KDD 
+
+#########################following original implementation:
+
+--------------------------------------------------Crafting AE.....
+Train set dimension: 125973 rows, 42 columns
+Test set dimension: 22544 rows, 42 columns
+37
+Resampled dataset shape (125973, 40)
+Accuracy on the test set: 90.27%
+the total number of test data points: 17169; the number of malicious data points: 15498
+Crafting restricted fgsm adversarial samples...
+
+Average L-2 perturbation size of the adv test set: 1.928287803771586
+attack success rate 4856/15498
+
+>>>Average L-2 perturbation size of the adv test set: 1.1966586641607833
+>>>attack success rate 1414/15498
+--------------------------------------------------Detect AE.....
+....
+Train data: (108270, 121); Test Data: (17169, 121)
+...\_logistic.py:764: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+    
+============================== LGR Model Evaluation ==============================
+
+Model Accuracy:
+ 0.8826194398682042
+ >>>>
+ 0.8797736916548797
+
+>>>>Confusion matrix:
+ [[510 127]
+ [ 43 734]]
+ 
+Confusion matrix:
+ [[1640  456]
+ [ 114 2646]]
+
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.94      0.78      0.85      2096
+           1       0.85      0.96      0.90      2760
+
+    accuracy                           0.88      4856
+   macro avg       0.89      0.87      0.88      4856
+weighted avg       0.89      0.88      0.88      4856
+
+============================== MLP Model Evaluation ==============================
+
+Model Accuracy:
+ 0.8970345963756178
+
+Confusion matrix:
+ [[1716  380]
+ [ 120 2640]]
+ 
+ ============================== Detection Model Evaluation ==============================
+
+Model Accuracy:
+ 1.0
+
+Confusion matrix:
+ [[10]]
+
+Classification report:
+               precision    recall  f1-score   support
+
+         1.0       1.00      1.00      1.00        10
+
+    accuracy                           1.00        10
+   macro avg       1.00      1.00      1.00        10
+weighted avg       1.00      1.00      1.00        10
+
+
+Detector ROC-AUC score: nan
+
+
+#########################
+--------------------------------------------------Crafting AE.....
